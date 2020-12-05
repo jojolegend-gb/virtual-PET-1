@@ -24,7 +24,6 @@ function setup() {
   
   foodStock = database.ref('food');
   foodStock.on("value",readStock);
-  foodStock.set(50);
   
   milk = createSprite(140,435,10,10);
   milk.addImage(milkImg);
